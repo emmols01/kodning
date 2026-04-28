@@ -1,0 +1,32 @@
+@use 'variabler';
+
+body {
+    background: linear-gradient(to top, variabler.$secondaryColor, variabler.$primaryColor);
+}
+
+.stage {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 1em 10em 2em 10em;
+    color: variabler.$textColor;
+
+
+    p {
+        font-size: 18px;
+        color: variabler.$textColor;
+    }
+
+    .btn {
+    @include variabler.btn;
+    }
+
+    //tjek med lærer
+    .btn-container{
+        display:flex;
+        justify-content: center;
+    
+    }
+    img {
+        max-width: 200px;
+    }
+}

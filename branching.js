@@ -6,7 +6,7 @@ const main = document.querySelector("main");
 //det der gør, at vi skifter mellem stages
 const nextStage =(e) => {
     console.log(e.target.textContent);
-    let h2Text, pText, btnsText, image;
+    let h2Text, pText, btnsText;
     switch(e.target.textContent) {
     case "Start": 
         console.log ("Start button was clicked");
@@ -48,15 +48,6 @@ const nextStage =(e) => {
                 button.classlist.add("btn");
                 section.append(button);
             })
-
-            //aner ikke om det er rigtigt, få det tjekket.
-        if(image != undefined) {
-            image.foreach (text => {
-                const img = document.createElement ("img");
-                img.textContent = text;
-                section.append(button);
-            })
-        }
         }
         main.append(section);
         // bruges ikke alligevel: console.log(h2Text,pText, btnsText)

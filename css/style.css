@@ -1,1 +1,25 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  background: linear-gradient(to top, #091F5B, #6F96D1);
+}
+
+.stage {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 1rem;
+  color: #000;
+}
+.stage p {
+  font-size: 18px;
+  color: #000;
+}
+.stage .btn {
+  background-color: #6F96D1;
+  padding: 1em 3em;
+  stroke: #091F5B;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.stage img {
+  max-width: 200px;
+}/*# sourceMappingURL=style.css.map */
