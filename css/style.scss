@@ -1,32 +1,61 @@
 @use 'variabler';
 
 body {
-    background: linear-gradient(to top, variabler.$secondaryColor, variabler.$primaryColor);
+    background: linear-gradient(to top, variabler.$primaryColor, variabler.$tetiaryColor);
 }
 
 .stage {
-    max-width: 750px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 1em 10em 2em 10em;
+    // padding: 1em 10em 2em 10em;
     color: variabler.$textColor;
 
-
+    h1{
+        text-align: center;
+        font-family: variabler.$font-main;
+    }
+    h2{
+        text-align: center;
+        font-family: variabler.$font-main;
+    }
     p {
+        font-family: variabler.$font-main;
         font-size: 18px;
         color: variabler.$textColor;
+        text-align: center
     }
 
     .btn {
     @include variabler.btn;
     }
 
-    //tjek med lærer
     .btn-container{
         display:flex;
         justify-content: center;
+        gap: 10px;
     
     }
     img {
+       display: block;
         max-width: 200px;
+        margin: 0 auto;
     }
+}
+
+//Til telefon
+@media screen and (max-width: 750px){
+
+.stage {
+    padding: 1em 2em;
+}
+.btn-container{
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+
+}
+.btn{
+    max-width: 300px;
+}
+
 }
