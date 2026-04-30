@@ -5,36 +5,46 @@ body {
 }
 
 .stage {
-    max-width: 800px;
-    margin: 0 auto;
-    // padding: 1em 10em 2em 10em;
+    max-width: 900px;
+    height: 80vh;
+    margin: 5em auto;
+    display: none;
     color: variabler.$textColor;
+    padding: variabler.$padding;
+
+     &.active {
+        display: block;
+    }
 
     h1{
         text-align: center;
         font-family: variabler.$font-main;
+        padding-bottom: 25px;
     }
     h2{
         text-align: center;
         font-family: variabler.$font-main;
+        padding: 10px;
     }
     p {
         font-family: variabler.$font-main;
         font-size: 18px;
         color: variabler.$textColor;
-        text-align: center
+        text-align: center;
+        padding-bottom: 10px;
     }
 
     .btn {
     @include variabler.btn;
     }
 
-    .btn-container{
+    .btn{
         display:flex;
-        justify-content: center;
-        gap: 10px;
-    
+        flex-direction: column;
+        align-items: center;
     }
+    
+  
     img {
        display: block;
         max-width: 200px;
@@ -46,15 +56,15 @@ body {
 @media screen and (max-width: 750px){
 
 .stage {
+    height: 100vh;
     padding: 1em 2em;
+    margin: 2em auto;
 }
-.btn-container{
+
+.btn{
     flex-direction: column;
     align-items: center;
-    gap: 10%;
-
-}
-.btn{
+    gap: 50%;
     max-width: 300px;
 }
 

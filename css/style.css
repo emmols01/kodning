@@ -3,39 +3,50 @@ body {
 }
 
 .stage {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 900px;
+  height: 80vh;
+  margin: 5em auto;
+  display: none;
   color: #000;
+  padding: 1rem;
+}
+.stage.active {
+  display: block;
 }
 .stage h1 {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 25px;
 }
 .stage h2 {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
 }
 .stage p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   color: #000;
   text-align: center;
+  padding-bottom: 10px;
 }
 .stage .btn {
+  width: 350px;
+  height: 70px;
   background-color: #6F96D1;
+  margin: 10px auto;
   padding: 1em 3em;
   stroke: #6F96D1;
   border-radius: 25px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
   text-align: center;
-  max-width: 350px;
 }
-.stage .btn-container {
+.stage .btn {
   display: flex;
-  justify-content: center;
-  gap: 10px;
+  flex-direction: column;
+  align-items: center;
 }
 .stage img {
   display: block;
@@ -45,14 +56,14 @@ body {
 
 @media screen and (max-width: 750px) {
   .stage {
+    height: 100vh;
     padding: 1em 2em;
-  }
-  .btn-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 10%;
+    margin: 2em auto;
   }
   .btn {
+    flex-direction: column;
+    align-items: center;
+    gap: 50%;
     max-width: 300px;
   }
 }/*# sourceMappingURL=style.css.map */

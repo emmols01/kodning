@@ -6,14 +6,16 @@ $textColor: #000 ;
 $font-main: Arial, Helvetica, sans-serif;
 
 @mixin btn( $secondaryColor: $primaryColor){
+        width: 350px;
+        height: 70px;
         background-color: $primaryColor;
+        margin: 10px auto;
         padding: 1em 3em;
         stroke: $secondaryColor;
         border-radius: 25px;
         cursor:pointer; 
-        font-size: 18px;
+        font-size: 16px;
         text-decoration: none;
         text-align: center;
-        max-width: 350px;
 }
 
