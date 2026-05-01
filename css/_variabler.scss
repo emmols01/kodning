@@ -10,12 +10,17 @@ $font-main: Arial, Helvetica, sans-serif;
         height: 70px;
         background-color: $primaryColor;
         margin: 10px auto;
-        padding: 1em 3em;
+        padding: 1em 4em;
         stroke: $secondaryColor;
         border-radius: 25px;
         cursor:pointer; 
         font-size: 16px;
         text-decoration: none;
         text-align: center;
+
+        &:hover {
+                background-color: $tetiaryColor;
+                box-shadow: $secondaryColor 5px 5px 30px;
+        }
 }
 
