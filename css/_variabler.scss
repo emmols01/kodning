@@ -5,20 +5,22 @@ $tetiaryColor: #BAD6EB ;
 $textColor: #000 ;
 $font-main: Arial, Helvetica, sans-serif;
 
-@mixin btn( $secondaryColor: $primaryColor){
+@mixin btn( $secondaryColor: $primaryColor, $textColor: $textColor){
         width: 350px;
         height: 70px;
         background-color: $primaryColor;
         margin: 10px auto;
         padding: 1em 4em;
-        stroke: $secondaryColor;
+        border: 2px solid $secondaryColor;
         border-radius: 25px;
         cursor:pointer; 
         font-size: 16px;
         text-decoration: none;
+        color: $textColor;
         text-align: center;
 
         &:hover {
+                color: $textColor;
                 background-color: $tetiaryColor;
                 box-shadow: $secondaryColor 5px 5px 30px;
         }

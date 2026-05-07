@@ -61,12 +61,12 @@ const nextStage =(e) => {
         pText = "Den bedste ide er altid at oprette et nyt, men at lave et allerede eksisterende om er en okay løsning. Hvordan laver du det om?";
         btnsText = ["1. Tilføjer et enkelt specialtegn", "2. Laver kodeordet meget længere med tal, bogstaver og specialtegn.", "3. Gentager kodeordet, så det samme står to gange."];
     break;
-
+   
     case "3. Opret et helt nyt kodeord ":
         h2Text = "God ide!";
         imagePath = "img/god.png";
         pText = "Hvor mange tegn laver du dit kodeord på?";
-        btnsText = ["1. minimum 6 tegn", "2. Minimum 10 tegn", "3. Minimum 14 tegn"];
+        btnsText = ["1. minimum 6 tegn", "2. Minimum 10 tegn", "3. Minimum 15 tegn"];
     break;
 
     //Outcomes
@@ -74,6 +74,13 @@ const nextStage =(e) => {
         h2Text = "Øv";
         imagePath = "img/trist.png";
         pText = "Dit kodeord blev gættet og nu har de adgang til flere af dine platforme og profiler... ";
+        btnsText = ["Prøv igen" ];
+    break;
+
+     case "1. Tilføjer et enkelt specialtegn":
+        h2Text = "Øv!";
+        imagePath = "img/trist.png";
+         pText = "Dit kodeord blev gættet og nu har de adgang til flere af dine platforme og profiler... ";
         btnsText = ["Prøv igen" ];
     break;
 
@@ -105,7 +112,7 @@ const nextStage =(e) => {
         btnsText = ["Prøv igen" ];
     break;
 
-    case "3. Minimum 14 tegn":
+    case "3. Minimum 15 tegn":
         h2Text = "God ide!";
         imagePath = "img/god.png";
         pText = "Det ideele antal tegn er nemlig 15 tegn bestående af en blanding af små og store bogstaver, tal og specialtegn.";
